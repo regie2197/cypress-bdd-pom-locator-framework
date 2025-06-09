@@ -1,0 +1,36 @@
+{
+  "name": "cypress-bdd-pom-locator-framework",
+  "version": "1.0.0",
+  "description": "Example Cypress Test Automation Project with BDD + POM + Locators Framework Structure",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "login-feature-test": "npx cypress run --browser edge --spec cypress/e2e/features//login/login.feature"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regie2197/cypress-bdd-pom-locator-framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/regie2197/cypress-bdd-pom-locator-framework/issues"
+  },
+  "homepage": "https://github.com/regie2197/cypress-bdd-pom-locator-framework#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.5",
+    "cypress": "^14.4.1",
+    "esbuild": "^0.25.5",
+    "typescript": "^5.8.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": [
+      "cypress/e2e/[filepath]/**/*.{js,ts}",
+      "cypress/e2e/features/**/*.ts",
+      "cypress/e2e/[filepath].{js,ts}",
+      "cypress/support/step_definitions/**/*.{js,ts}"
+    ]
+  }
+}

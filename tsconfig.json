@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", 
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "paths": {
+      "@badeball/cypress-cucumber-preprocessor/*": [
+        "./node_modules/@badeball/cypress-cucumber-preprocessor/dist/subpath-entrypoints/*"
+      ]
+    },
+  }
+}
